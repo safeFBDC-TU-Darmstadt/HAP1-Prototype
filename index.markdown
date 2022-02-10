@@ -5,8 +5,27 @@
 layout: default
 ---
 
-## Welcome to safeFBDC-HAP1-Prototype
+# Welcome to safeFBDC-HAP1-Prototype
 
-On this Website, the safeFBDC team from TU Darmstadt will present their research results and prototypes. 
+This is an introduction paragraph...
 
-Come back soon to learn more!
+## Data Management Lab
+
+The finished and published work of the Data Management Lab is centered around two main topics: verifiable and secure data sharing and secure and privacy-preserving federated ML.
+
+### Verifiable and Secure Data Sharing
+
+This is a description of what we did and published.
+
+- Lock Manager for Blockchains
+- ACID-V
+
+### Secure and Privacy-Preserving Federated Machine Learning
+
+This is a description of what we did and published.
+
+- Client-side validation to detect and prevent model poisoning
+
+## Software Technology Group
+
+## AI & ML Lab
