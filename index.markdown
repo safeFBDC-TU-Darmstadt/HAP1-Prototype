@@ -57,4 +57,14 @@ However, in some scenarios, such as heterogeneous data, the state of the art def
 
 ## Software Technology Group
 
+In the context of SafeFDBC:
+
+REScala’s reactive programming support could be helpful to develop complex UI based tooling (control centers, monitoring) for any of the developed solutions. Furthermore, REScala does allow flexible replacements of its schedulers, thus reusing the language surface (declarative dataflow definitions) for other purposes – specifically, for more data processing focused pipelines. Reusing REScala here would both allow us to profit from our internal experience, but also make it easier to integrate data processing, with interactive applications.
+
+REScala’s support for convergent data types is still somewhat experimental, as we experiment with a language-integrated approach to design applications together with data types. In particular, this allows developers to separate application logic, reasoning about distributed consistency (causal consistency to be specific), and the message dissemination logic – while at the same time all pieces as flexible modules in the language runtime and can be adapted and optimized for the current use case if necessary. In particular, we have used this architecture to implement transparent encryption of data on untrusted intermediaries in about 15 lines of code. More generally, we believe this approach is well suited to implement all manners of coordination protocols (ranging from management of encrypted states, over consensus, to opportunistic optimizations) in a manner that only requires local reasoning from the developer, but can be executed completely decentralized. Specifically, in the context of SafeFDBC demonstrator this could be useful as a basis for the coordination between banks (i.e., the decisions which data may be used by what applications, etc), as the approach also naturally provides a complete history of all past decisions and the current state to all participants (if not specifically optimized away or hidden). See the preprint paper: http://www.st.informatik.tu-darmstadt.de/preprints/2021-12_preprint_ECOOP_EnCRDTs.pdf
+
+We have solutions for “tierless” programming, i.e., programming a diverse range of devices and their communication as a single source program (where the different “tiers” such as client/server are no longer fundamental differences in the programming model). Of maybe particular interest to the safeFDBC project, includes programming of smart contracts as one of the tiers, where we then can automatically infer correctness criteria that the contract relies on from the specification of the off-contract program code. This enables to check these criteria dynamically, thus preventing attacks where the off-contract program has been replaced by one that does not adhere to the specified behaviors.
+
+
+
 ## AI & ML Lab
