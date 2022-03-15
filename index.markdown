@@ -57,14 +57,31 @@ However, in some scenarios, such as heterogeneous data, the state of the art def
 
 ## Software Technology Group
 
-In the context of SafeFDBC:
+We develop programming models, methods, and paradigms for decentralized communication and data management relevant to safeFDBC. Of special interest are the projects below.
 
-REScala’s reactive programming support could be helpful to develop complex UI based tooling (control centers, monitoring) for any of the developed solutions. Furthermore, REScala does allow flexible replacements of its schedulers, thus reusing the language surface (declarative dataflow definitions) for other purposes – specifically, for more data processing focused pipelines. Reusing REScala here would both allow us to profit from our internal experience, but also make it easier to integrate data processing, with interactive applications.
+REScala’s uses reactive programming to support development of complex UI based tooling (control centers, monitoring). Furthermore, REScala does allow flexible replacements of its schedulers, thus reusing the language surface (declarative dataflow definitions) for other purposes – specifically, for more data processing focused pipelines. Using REScala allows applications developed in the context of safeFDBC to profit from our internal experience, but also make it easier to integrate data processing, with interactive applications.
 
-REScala’s support for convergent data types is still somewhat experimental, as we experiment with a language-integrated approach to design applications together with data types. In particular, this allows developers to separate application logic, reasoning about distributed consistency (causal consistency to be specific), and the message dissemination logic – while at the same time all pieces as flexible modules in the language runtime and can be adapted and optimized for the current use case if necessary. In particular, we have used this architecture to implement transparent encryption of data on untrusted intermediaries in about 15 lines of code. More generally, we believe this approach is well suited to implement all manners of coordination protocols (ranging from management of encrypted states, over consensus, to opportunistic optimizations) in a manner that only requires local reasoning from the developer, but can be executed completely decentralized. Specifically, in the context of SafeFDBC demonstrator this could be useful as a basis for the coordination between banks (i.e., the decisions which data may be used by what applications, etc), as the approach also naturally provides a complete history of all past decisions and the current state to all participants (if not specifically optimized away or hidden). See the preprint paper: http://www.st.informatik.tu-darmstadt.de/preprints/2021-12_preprint_ECOOP_EnCRDTs.pdf
+> https://www.rescala-lang.com/
+> Repository containing source code: https://github.com/rescala-lang/REScala
+
+Interactive applications manage a complex data flow, while data processing systems often have to deal with large amounts of data and complex computations on each data item. The models overlap in their use of dataflow abstractions to express program logic, but there are also challenging differences. Specifically, interactive applications are concerned with ensuring consistency of the current state the application is in, while data processing applications reason about temporal relations between different events (such as multiple sensors detecting changes over time). Data processing systems with a user in-the-loop often require both directions within the same application. We have studied possible combinations of the two paradigms and developed first solutions to integrate temporal event processing into REScala.
+
+> Bachelor Thesis
+> Integrating Complex Event Processing and Transactional Dataflow
+> https://tuprints.ulb.tu-darmstadt.de/19914/
+> Sourcecode (part of the REScala project): https://github.com/rescala-lang/REScala/blob/master/Code/Main/shared/src/main/scala/rescala/extra/reactor/ReactorBundle.scala
+
+
+REScala’s support for convergent data types is still somewhat experimental, as we experiment with a language-integrated approach to design applications together with data types. In particular, this allows developers to separate application logic, reasoning about distributed consistency (causal consistency to be specific), and the message dissemination logic – while at the same time all pieces as flexible modules in the language runtime and can be adapted and optimized for the current use case if necessary. In particular, we have used this architecture to implement transparent encryption of data on untrusted intermediaries in about 15 lines of code. More generally, we believe this approach is well suited to implement all manners of coordination protocols (ranging from management of encrypted states, over consensus, to opportunistic optimizations) in a manner that only requires local reasoning from the developer, but can be executed completely decentralized. Specifically, in the context of SafeFDBC demonstrator this could be useful as a basis for the coordination between banks (i.e., the decisions which data may be used by what applications, etc), as the approach also naturally provides a complete history of all past decisions and the current state to all participants (if not specifically optimized away or hidden).
+
+> Preprint publication: http://www.st.informatik.tu-darmstadt.de/preprints/2021-12_preprint_ECOOP_EnCRDTs.pdf
+> Sourcecode (part of the REScala project): https://github.com/rescala-lang/REScala/tree/master/Code/Extensions/Kofre/src
 
 We have solutions for “tierless” programming, i.e., programming a diverse range of devices and their communication as a single source program (where the different “tiers” such as client/server are no longer fundamental differences in the programming model). Of maybe particular interest to the safeFDBC project, includes programming of smart contracts as one of the tiers, where we then can automatically infer correctness criteria that the contract relies on from the specification of the off-contract program code. This enables to check these criteria dynamically, thus preventing attacks where the off-contract program has been replaced by one that does not adhere to the specified behaviors.
 
+> ScalaLoci (tierless programming for distributed systems)
+> Blockchain integration not yet public.
+> https://scala-loci.github.io/
 
 
 ## AI & ML Lab
