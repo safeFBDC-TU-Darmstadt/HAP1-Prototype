@@ -72,9 +72,9 @@ Prevalent machine learning approaches often assume that task specific data is un
 
 In return, this imposes several real-world challenges on the development of our practical machine learning solutions. For instance, the popular simple averaging across individual client models, employed regularly in modern federated machine learning, does not only struggle when data heterogeneity is increased, but also allows for easy privacy violations  through attacks on the averaging procedure:
 
-> *User Label Leakage from Gradients in Federated Learning*, 
-> Authors: Aidmar Wainakh, Fabrizio Ventola, Till Müßig, Jens Keim, Carlos Garcia Cordero, Ephraim Zimmer, Tim Grube, Kristian Kersting, Max Mühlhäuser (2022)
-> Published in: Proceedings on Privacy Enhancing Technologies (PoPETS); a previous version also as arXiv preprint arXiv:2105.09369.
+> *User Label Leakage from Gradients in Federated Learning*;
+> Authors: Aidmar Wainakh, Fabrizio Ventola, Till Müßig, Jens Keim, Carlos Garcia Cordero, Ephraim Zimmer, Tim Grube, Kristian Kersting, Max Mühlhäuser;
+> Published in: Proceedings on Privacy Enhancing Technologies (PoPETS) 2022; a previous version also as arXiv preprint arXiv:2105.09369;
 > Repository: https://github.com/tklab-tud/llg
 
  To overcome this hurdle, we are presently developing solutions that allow communication to actively acknowledge and handle discrepancies in client data, while also retaining privacy through synthetic data generation processes. Our respectively proposed approaches to replace original data with generated privatized synthetic data for collaborative processing are currently undergoing a double-blind peer-review publication process.  Their transfer to specific financial use-cases is presently being evaluated and in progress. 
@@ -82,7 +82,7 @@ In return, this imposes several real-world challenges on the development of our 
 As a prior basis and first step predating the development of these solutions, we have recently further published a position paper that advocates for solution transparency and aims to promote comparability. The motivation stems from a challenge in identification of suitability of existing methods for a particular problem at hand, as a consequence of a collapse of scenarios to a single accuracy number in benchmarks. Such a single value can leave out necessary practical details and can therefore make claims misleading when adopted in practice outside of benchmarks.
 Our work thus summarizes the myriad of elements that go into a static machine learning workflow and lays open additional factors to be considered when practical continuously evolving machine learning systems are considered. At the core, inspiration and synergies with several older literature subfields are highlighted and several potential evaluation metrics are emphasized. This then serves as the basis to propose an intuitive tool to assess the focus of particular existing techniques and help identify their future potential for chosen tasks. 
 
-> *CLEVA-Compass:  A Continual Learning EValuation Assessment Compass to Promote Research Transparency and Comparability*
-> Authors: Martin Mundt, Steven Lang, Quentin Delfosse, Kristian Kersting
-> Published in: International Conference on Learning Representations (ICLR) 2022
+> *CLEVA-Compass:  A Continual Learning EValuation Assessment Compass to Promote Research Transparency and Comparability*;
+> Authors: Martin Mundt, Steven Lang, Quentin Delfosse, Kristian Kersting;
+> Published in: International Conference on Learning Representations (ICLR) 2022;
 > Repository: https://github.com/ml-research/CLEVA-Compass 
