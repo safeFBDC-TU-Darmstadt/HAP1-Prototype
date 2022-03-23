@@ -33,7 +33,8 @@ A recently completed bachelor thesis focuses on the second aspect. It proposes a
 
 > Thesis Title: Verifiable Lock Manager using Intel SGX\
 > Author: Henry Helm\
-> Repository containing source code: Link
+> Thesis: [Download](assets/Bachelor_Thesis_Verifiable_Lockmanager_SGX.pdf)\
+> Repository containing source code: <https://github.com/DataManagementLab/thesis-verifiableLockManager>
 
 #### ACID-V
 
@@ -58,7 +59,8 @@ However, in some scenarios, such as heterogeneous data, the state of the art def
 
 > Thesis Title: Client-side Validation for Efficient Model Poisoning Detection in Federated Learning.\
 > Author: Benedikt Völker\
-> Repository containing source code: Link
+> Thesis: [Download](assets/Master_Thesis_Voelker_Model_Poisoning_Detection.pdf)\
+> Repository containing source code: <https://github.com/DataManagementLab/thesis-fl_client-side_validation>
 
 ## Software Technology Group
 
