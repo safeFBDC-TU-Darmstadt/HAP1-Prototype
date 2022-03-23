@@ -1,5 +1,7 @@
-## Welcome to safeFBDC-HAP1-Prototype
+# safeFBDC Prototype Website
 
-On this Website, the safeFBDC team from TU Darmstadt will present their research results and prototypes. 
+This repository contains the safeFBDC prototype website, which is hosted via Github Pages.
 
-Come back soon to learn more!
+To display the page locally, please follow this guide: <https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll>.
+
+This README is not the index page of the published site. Please refer to [index.markdown](index.markdown) to add content.
