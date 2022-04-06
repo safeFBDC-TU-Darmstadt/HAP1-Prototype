@@ -109,3 +109,7 @@ Our work thus summarizes the myriad of elements that go into a static machine le
 > Authors: Martin Mundt, Steven Lang, Quentin Delfosse, Kristian Kersting\
 > Published in: International Conference on Learning Representations (ICLR) 2022\
 > Repository: <https://github.com/ml-research/CLEVA-Compass>
+
+
+Due to data protection laws and hundreds of zettabytes of data getting created every year, bringing all the data at a centralized location is not feasible. In such scenario, we can use federated machine learning, also known as collaborative learning that trains an algorithm across multiple decentralized data owners. Below is a living white paper on federated learning settings and its use cases in finance.
+https://github.com/DataManagementLab/safeFBDC-HAP1-Prototype/blob/main/FederatedLearningInFinace_Whitepaper.pdf
