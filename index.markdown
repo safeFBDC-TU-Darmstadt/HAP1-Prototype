@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-title: "SafeFBDC Research at TU Darmstadt"
+title: "Platform-Prototype TruFinance / Basic Infrastructure"
 layout: default
 ---
 
