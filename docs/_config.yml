@@ -22,9 +22,9 @@ title: Platform-Prototype TruFinance / Basic Infrastructure
 email: adrian.lutsch@cs.tu-darmstadt.de
 description: >- # this means to ignore newlines until "baseurl:"
   First prototypes and artifacts from Technical University of Darmstadt in the safeFBDC project.
-domain: datamanagementlab.github.io
-url: https://datamanagementlab.github.io
-baseurl: "/safeFBDC-HAP1-Prototype" # the subpath of your site, e.g. /blog
+domain: safefbdc-tu-darmstadt.github.io
+url: https://safefbdc-tu-darmstadt.github.io
+baseurl: "/HAP1-Prototype" # the subpath of your site, e.g. /blog
 
 # Build settings
 theme: jekyll-theme-minimal
